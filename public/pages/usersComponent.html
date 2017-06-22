@@ -1,0 +1,33 @@
+
+
+<h3>View Users Data by AngularJs 2 </h3>
+
+<table id="table_id" class="table">
+    <thead>
+    <tr>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Gender</th>
+        <th>Action</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let user of users; let i = index">
+        <td >
+            {{user.name}}
+        </td>
+        <td >
+            {{user.email}}
+        </td>
+        <td >
+            <span *ngIf="user.gender == 1"   class="label label-default">Male </span>
+            <span *ngIf="user.gender == 0"   class="label label-info">Female </span>
+        </td>
+
+        <td >
+            <a (click)="goToLink(user.id)" class="btn btn-primary btn-sm"> View user data </a>
+        </td>
+    </tr>
+
+    </tbody>
+</table>

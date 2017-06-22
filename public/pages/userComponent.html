@@ -1,0 +1,11 @@
+
+<div class="container">
+    <h4>Single page</h4>
+    <div class="jumbotron">
+        <h1>{{user.name}}</h1>
+        <p>E-mail :{{user.email}}</p>
+        <p>Gender :<span *ngIf="user.gender == 1"   class="label label-default">Male </span></p>
+        <p><span *ngIf="user.gender == 0"   class="label label-info">Female </span></p>
+    </div>
+    
+</div>
