@@ -86,7 +86,7 @@
 
         <div class="links">
             <a href="{{url('/ng')}}">Show Users</a>
-            <a href="https://github.com/" target="_blank">GitHub Repo</a>
+            <a href="https://github.com/waelwalid/Laravel-5.4-and-Angular-Rest-APP-" target="_blank">GitHub Repo</a>
         </div>
     </div>
 </div>
